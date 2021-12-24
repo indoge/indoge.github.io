@@ -1,0 +1,17 @@
+<div class="container" style="background-color: rgb(202, 202, 202); padding: 1%; border-radius: 4px; margin-top: 5%;">
+    <div>
+        <p class="display-6 col-lg-6 col-md-6 col-sm-1"
+            style="font-weight: 700; color: rgba(0, 0, 0, 0.8); padding-top: 1%;">Latest Drops</p>
+
+    </div>
+    <div class="cardstyle row justify-content-center flip-in-hor-top">
+        <div class="card individual-card-style" *ngFor="let drops of latestDrops">
+            <img src={{drops.imgPath}} class="card-img-top col-lg-4 col-md-3 col-sm-12" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-weight: 500; color: rgba(250, 245, 245, 0.8);">Series : {{drops.title}}</h5>
+                <p class="card-text" style="font-weight: 500; color: rgba(250, 245, 245, 0.8);">Rarity : {{drops.rarity}}</p>
+                <a href="#" class="btn btn-secondary">Buy in WazirX</a>
+            </div>
+        </div>
+    </div>
+</div>
