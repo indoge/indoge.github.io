@@ -9,17 +9,17 @@ export class LatestDropsComponent implements OnInit {
 
   latestDrops = [
     {
-      imgPath : '../assets/Doge.png',
+      imgPath : '../assets/Sleeveless - Common.png',
       title : 'Sleeveless Doge',
       rarity : 'Common'
     },
     {
-      imgPath : '../assets/Doge.png',
+      imgPath : '../assets/Sleeveless - Rare.png',
       title : 'Sleeveless Doge',
       rarity : 'Rare'
     },
     {
-      imgPath : '../assets/Doge.png',
+      imgPath : '../assets/Sleeveless - Epic.png',
       title : 'Sleeveless Doge',
       rarity : 'Epic'
     }
