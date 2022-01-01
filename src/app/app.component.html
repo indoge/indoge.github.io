@@ -13,19 +13,25 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" style=" color: rgb(255, 255, 255);" routerLink="">Home</a>
+            <a class="nav-link active" aria-current="page" style=" color: rgb(255, 255, 255);" data-bs-dismiss="offcanvas" routerLink="">Home</a>
           </li>
           <li>
             <hr class="divider">
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="latestdrops" style="color: rgb(255, 255, 255); ">Latest Drops</a>
+            <a class="nav-link" routerLink="latestdrops" data-bs-dismiss="offcanvas" style="color: rgb(255, 255, 255); ">Latest Drops</a>
           </li>
           <li>
             <hr class="divider">
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="rewardsprogram" style="color: rgb(255, 255, 255);">Rewards Program</a>
+            <a class="nav-link" href="elondogetweets" style="color: rgb(255, 255, 255); " >Elon Doge Tweets</a>
+          </li>
+          <li>
+            <hr class="divider">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="rewardsprogram" style="color: rgb(255, 255, 255);" data-bs-dismiss="offcanvas">Rewards Program</a>
           </li>
           <li>
             <hr class="divider">
@@ -36,7 +42,7 @@
               NFT Series
             </a>
             <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-              <li><a class="dropdown-item" href="#">Coming soon</a></li>
+              <li><a data-bs-dismiss="offcanvas" class="dropdown-item" href="#">Coming soon</a></li>
               <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
               <li>
                 <hr class="dropdown-divider">
