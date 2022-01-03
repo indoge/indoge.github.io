@@ -2,15 +2,18 @@
     <h1 class="text">Elon's Doge Tweets</h1>
 </div>
 
-
+<div id="spinner" *ngIf="showSpinner | async">
+    <mat-progress-spinner class="spinner-style" [color]="color" [mode]="mode" [value]="value">
+    </mat-progress-spinner>
+</div>
 
 <div class="container" style="margin-top: 2%;">
     <div class="row">
-        <cdk-virtual-scroll-viewport appendOnly itemSize="50">
-            <div class="col-lg-6 col-md-6 col-sm-12" *cdkVirtualFor="let tweetlist of tweets">
-                <div [innerHtml]="tweetlist.tweet"></div>
-            </div>
-        </cdk-virtual-scroll-viewport>
+        <!-- <cdk-virtual-scroll-viewport appendOnly itemSize="5" class="example-viewport"> -->
+        <div class="col-lg-6 col-md-6 col-sm-12 tweet-style" *ngFor="let tweetlist of tweets">
+            <div [innerHtml]="tweetlist.tweet"></div>
+        </div>
+        <!-- </cdk-virtual-scroll-viewport> -->
     </div>
 </div>
 

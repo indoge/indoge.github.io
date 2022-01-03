@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ScrollingModule } from '@angular/cdk/scrolling';
-
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LatestDropsComponent } from './latest-drops/latest-drops.component';
@@ -22,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ScrollingModule
+    ScrollingModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

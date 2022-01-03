@@ -15,3 +15,25 @@
 	
 	}
   }
+
+  .example-viewport {
+	height: 90%;
+	width: 100%;
+	border: 1px solid black;
+  }
+  
+  .example-item {
+	height: 90%;
+  }
+
+  .tweet-style {
+	  content-visibility: auto;
+  }
+
+  .spinner-style {
+	  position: absolute;
+	  top : 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  z-index: 10;
+  }

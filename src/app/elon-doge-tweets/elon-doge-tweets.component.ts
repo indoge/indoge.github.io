@@ -1,4 +1,8 @@
+import { BuiltinMethod } from '@angular/compiler';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {ThemePalette} from '@angular/material/core';
+import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
+import { LoadingService } from '../loading.service';
 
 @Component({
   selector: 'app-elon-doge-tweets',
@@ -7,6 +11,12 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   changeDetection : ChangeDetectionStrategy.OnPush
 })
 export class ElonDogeTweetsComponent implements OnInit {
+
+  showSpinner = this.loader.loadingObs;
+  //showSpinners :  boolean = true;
+  color: ThemePalette = 'warn';
+  mode: ProgressSpinnerMode = 'indeterminate';
+  value = 50;
 
   tweets = [
     {
@@ -286,9 +296,13 @@ export class ElonDogeTweetsComponent implements OnInit {
     }
   ]
 
-  constructor() { }
+  constructor(private loader : LoadingService) {
+    
+   }
 
   ngOnInit(): void {
+    this.loader.hideSpinner();
+    
   }
 
 }
