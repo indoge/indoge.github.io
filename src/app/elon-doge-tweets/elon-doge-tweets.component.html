@@ -2,7 +2,13 @@
     <h1 class="text">Elon's Doge Tweets</h1>
 </div>
 
+<div class="container" *ngIf="showSpinner | async"><h1 style="font-size: xx-large; font-weight: 200; color: rgba(255, 255, 255, 0.6);">
+    Takes longtime to load ..Please wait untill it loads the twitter styles..
+  </h1></div>
+
+
 <div id="spinner" *ngIf="showSpinner | async">
+    
     <mat-progress-spinner class="spinner-style" [color]="color" [mode]="mode" [value]="value">
     </mat-progress-spinner>
 </div>
