@@ -8,9 +8,9 @@
         <div class="card individual-card-style" *ngFor="let drops of latestDrops">
             <img src={{drops.imgPath}} class="card-img-top col-lg-4 col-md-3 col-sm-12" alt="...">
             <div class="card-body">
-                <h4 class="card-title" style="font-weight: 500; color: rgba(250, 245, 245, 0.8);">Series : {{drops.title}}</h4>
-                <p class="card-text" style="font-weight: 200; color: rgba(250, 245, 245, 0.8);">Rarity : {{drops.rarity}}</p>
-                <a href="#" class="btn btn-secondary">Buy in WazirX</a>
+                <h4 class="card-title" style="font-weight: 500; color: rgba(250, 245, 245, 0.8);">Title : {{drops.title}}</h4>
+                <!-- <p class="card-text" style="font-weight: 200; color: rgba(250, 245, 245, 0.8);">Rarity : {{drops.rarity}}</p> -->
+                <a href={{drops.link}} class="btn btn-secondary">Buy in WazirX</a>
             </div>
         </div>
     </div>
